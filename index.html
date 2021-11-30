@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Pemerintah Desa Kanci</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Survey Pemerintahan Desa Kanci</h1>
+          <p id="description" class="description text-center">
+            Terima Kasih atas waktu anda untuk melakuan survey, guna meningkatkan sistem Pemerintahan Desa Kanci.
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Nama Lengkap</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Masukan Nama Lengkap"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Masukan Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <p>Jenis Kelamin</p>
+            <label class="jenis-kelamin">
+              <input
+                class="l"
+                name="jenis-kelamin"
+                value="laki-laki"
+                type="radio"
+                class="input-radio"
+                checked
+              />Laki-laki
+              <input
+                class="p"
+                name="jenis-kelamin"
+                value="perempuan"
+                type="radio"
+                class="input-radio"
+              />Perempuan</label>
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Usia<span class="clue">(optional)</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="17"
+              max="99"
+              class="form-control"
+              placeholder="Masukan Usia"
+            />
+          </div>
+          <div class="form-group">
+            <p>Status Pekerjaan</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>-- Pilih Status Pekerjaan --</option>
+              <option value="student">Pelajar/Mahasiswa</option>
+              <option value="job">Pekerja</option>
+              <option value="ibu rumah tangga">Ibu Rumah Tangga</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>Seberapa puaskah kinerja Pemerintahan Desa Kanci, menurut pandangan Anda?</p>
+            <label
+              ><input
+                name="kepuasan-layanan"
+                value="Sangat Puas"
+                type="radio"
+                class="input-radio"
+              />Sangat Puas</label>
+            <label>
+              <input
+                name="kepuasan-layanan"
+                value="Sangat Puas"
+                type="radio"
+                class="input-radio"
+                checked
+              />Puas</label>
+            <label>
+              <input
+                name="kepuasan-layanan"
+                value="Biasa Aja"
+                type="radio"
+                class="input-radio"
+              />Biasa Aja</label>
+            <label
+              ><input
+                name="kepuasan-layanan"
+                value="Kurang Puas"
+                type="radio"
+                class="input-radio"
+              />Kurang Puas</label>
+            <label
+              ><input
+                name="kepuasan-layanan"
+                value="Tidak Puas"
+                type="radio"
+                class="input-radio"
+              />Tidak Puas</label>
+          </div>
+      
+          <div class="form-group">
+            <p>
+              Setujui. Bahwa survey yang Anda isi benar, dan tanpa paksaan.
+            </p>
+      
+            <label
+              ><input
+                name="persetujuan"
+                value="akta lahir"
+                type="checkbox"
+                class="input-checkbox"
+              />Pembuatan AKTA Lahir</label>
+            <label>
+              <input
+                name="pelayanan"
+                value="KK"
+                type="checkbox"
+                class="input-checkbox"
+              />Pembuatan Kertu Keluarga</label>
+            <label>
+              <input
+                name="pelayanan"
+                value="surat pengantar"
+                type="checkbox"
+                class="input-checkbox"
+              />Pembuatan Surat Pengantar</label>
+            <label>
+              <input
+                name="pelayanan"
+                value="lainnya"
+                type="checkbox"
+                class="input-checkbox"
+              />Lainnya</label>
+            </div>
+      
+            <div class="form-group">
+                <p>Masukan Saran dan Kritik Anda disini.</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Isi disini..."
+            ></textarea>
+            </div>
+      
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Kirim</button>
+            </div>
+            <footer class="footer">
+                <p>&copy 2021 Created By <a href="https://www.facebook.com/vandue.niecky" class="text-white fw-bold">Van Due Niecky</a>.</p>
+            </footer>
+        </form>
+    </div>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>      
+
+</body>
+</html>
